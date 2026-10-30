@@ -1,301 +1,432 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="#e87500" name="theme-color"/>
-<title>People | SAMS Lab — Texas State University</title>
-<meta content="SAMS Laboratory at Texas State University: safe, intelligent, and human-aware mobility systems." name="description"/>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#ffffff"/>
 
+  <title>People | SAMS Lab — Texas State University</title>
 
-<style>
-.page-top {
-  margin-bottom: 32px;
-}
+  <meta name="description"
+        content="Meet the researchers at SAMS Laboratory, Texas State University."/>
 
-.page-top .heading {
-  font-size: clamp(1.75rem, 3vw, 2.75rem);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
-}
-</style>
+  <link href="style.css" rel="stylesheet"/>
 
+  <style>
+    .team-heading {
+      font-family: Manrope, Arial, sans-serif;
+      font-size: clamp(38px, 4vw, 58px);
+      font-weight: 750;
+      letter-spacing: -0.045em;
+      line-height: 1.15;
+      margin: 0 0 30px;
+    }
+  </style>
 </head>
 
 <body>
-<header>
-  <a class="brand" href="index.html">
-    <img alt="SAMS Lab logo" src="assets/logo.webp"/>
-    <span class="brand-text">
-      <strong>SAMS Laboratory</strong>
-      Texas State University
+
+  <!-- HEADER -->
+  <header>
+    <a class="brand" href="index.html">
+      <img alt="SAMS Lab logo" src="assets/logo.webp"/>
+
+      <span class="brand-text">
+        <strong>SAMS Laboratory</strong>
+        Texas State University
+      </span>
+    </a>
+
+    <button aria-label="Toggle navigation" class="menu">
+      ☰ Menu
+    </button>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="people.html">People</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="shell">
+
+      <div class="page-top">
+        <h1 class="team-heading">Our Team</h1>
+      </div>
+
+      <div class="people-hierarchy">
+
+        <!-- PRINCIPAL INVESTIGATOR -->
+        <section class="people-section">
+
+          <h2 class="section-label">
+            Principal Investigator
+          </h2>
+
+          <div class="people-row">
+
+            <article class="card person">
+
+              <div class="portrait">
+                <img
+                  alt="Natnael M. Negash"
+                  src="assets/prof-negash.webp"/>
+              </div>
+
+              <div class="inside">
+
+                <div class="role">
+                  Principal Investigator
+                </div>
+
+                <h3>Natnael M. Negash, Ph.D.</h3>
+
+                <p>
+                  Assistant Professor, Ingram School of Engineering,
+                  Texas State University.
+                </p>
+
+                <div class="social-links"
+                     aria-label="Natnael M. Negash profile links">
+
+                  <!-- GOOGLE SCHOLAR -->
+                  <a
+                    class="social-icon"
+                    href="https://scholar.google.com/citations?user=de8_IgUAAAAJ&amp;hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Google Scholar — Natnael M. Negash"
+                    title="Google Scholar">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm-6 12v4c2 2.5 10 2.5 12 0v-4l-6 4-6-4Z"
+                        fill="currentColor"/>
+                    </svg>
+                  </a>
+
+                  <!-- LINKEDIN -->
+                  <a
+                    class="social-icon"
+                    href="https://www.linkedin.com/in/natnael-m-negash-ph-d-12721473/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn — Natnael M. Negash"
+                    title="LinkedIn">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5c0-2.5-3-2.3-3 0v5h-3V9h3v1.4c1.4-2.4 6-2.6 6 2.3V19Z"
+                        fill="currentColor"/>
+                    </svg>
+                  </a>
+
+                  <!-- EMAIL -->
+                  <a
+                    class="social-icon"
+                    href="mailto:natnegash@txstate.edu"
+                    aria-label="Email — Natnael M. Negash"
+                    title="natnegash@txstate.edu">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M3 5h18v14H3zM3 6l9 7 9-7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linejoin="round"
+                        stroke-width="1.8"/>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- GRADUATE STUDENTS -->
+        <section class="people-section">
+
+          <h2 class="section-label">
+            Graduate Students
+          </h2>
+
+          <div class="people-row">
+
+            <!-- BEREKET -->
+            <article class="card person">
+
+              <div class="portrait">
+                <img
+                  alt="Bereket E. Kebede"
+                  src="assets/bereket.webp"/>
+              </div>
+
+              <div class="inside">
+
+                <div class="role">
+                  Doctoral Researcher
+                </div>
+
+                <h3>Bereket E. Kebede</h3>
+
+                <p>
+                  Ph.D. student in Mechanical Engineering.
+                  Research interests: autonomous driving,
+                  machine learning, dynamic systems,
+                  and intelligent control.
+                </p>
+
+                <div class="social-links"
+                     aria-label="Bereket E. Kebede profile links">
+
+                  <!-- GOOGLE SCHOLAR -->
+                  <a
+                    class="social-icon"
+                    href="https://scholar.google.com/citations?user=2gDAxJQAAAAJ&amp;hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Google Scholar — Bereket E. Kebede"
+                    title="Google Scholar">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm-6 12v4c2 2.5 10 2.5 12 0v-4l-6 4-6-4Z"
+                        fill="currentColor"/>
+                    </svg>
+                  </a>
+
+                  <!-- LINKEDIN -->
+                  <a
+                    class="social-icon"
+                    href="https://www.linkedin.com/in/bereketeshete/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn — Bereket E. Kebede"
+                    title="LinkedIn">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5c0-2.5-3-2.3-3 0v5h-3V9h3v1.4c1.4-2.4 6-2.6 6 2.3V19Z"
+                        fill="currentColor"/>
+                    </svg>
+                  </a>
+
+                  <!-- EMAIL -->
+                  <a
+                    class="social-icon"
+                    href="mailto:hro41@txstate.edu"
+                    aria-label="Email — Bereket E. Kebede"
+                    title="hro41@txstate.edu">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M3 5h18v14H3zM3 6l9 7 9-7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linejoin="round"
+                        stroke-width="1.8"/>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </article>
+
+            <!-- MASUM -->
+            <article class="card person">
+
+              <div class="portrait">
+                <img
+                  alt="Masum Billah Pial"
+                  src="assets/masum-pial.webp"/>
+              </div>
+
+              <div class="inside">
+
+                <div class="role">
+                  Graduate Researcher
+                </div>
+
+                <h3>Masum Billah Pial</h3>
+
+                <p>
+                  M.Sc. student in Mechanical and Manufacturing
+                  Engineering at Texas State University.
+                </p>
+
+                <div class="social-links"
+                     aria-label="Masum Billah Pial profile links">
+
+                  <!-- GOOGLE SCHOLAR -->
+                  <a
+                    class="social-icon unavailable"
+                    aria-disabled="true"
+                    tabindex="-1"
+                    aria-label="Google Scholar — Masum Billah Pial"
+                    title="Google Scholar link not yet provided">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm-6 12v4c2 2.5 10 2.5 12 0v-4l-6 4-6-4Z"
+                        fill="currentColor"/>
+                    </svg>
+                  </a>
+
+                  <!-- LINKEDIN -->
+                  <a
+                    class="social-icon unavailable"
+                    aria-disabled="true"
+                    tabindex="-1"
+                    aria-label="LinkedIn — Masum Billah Pial"
+                    title="LinkedIn link not yet provided">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5c0-2.5-3-2.3-3 0v5h-3V9h3v1.4c1.4-2.4 6-2.6 6 2.3V19Z"
+                        fill="currentColor"/>
+                    </svg>
+                  </a>
+
+                  <!-- EMAIL -->
+                  <a
+                    class="social-icon unavailable"
+                    aria-disabled="true"
+                    tabindex="-1"
+                    aria-label="Email — Masum Billah Pial"
+                    title="Email link not yet provided">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M3 5h18v14H3zM3 6l9 7 9-7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linejoin="round"
+                        stroke-width="1.8"/>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- UNDERGRADUATE STUDENTS -->
+        <section class="people-section">
+
+          <h2 class="section-label">
+            Undergraduate Students
+          </h2>
+
+          <div class="people-row">
+
+            <article class="card person">
+
+              <div class="portrait">
+                <img
+                  alt="Kidus A. Beshah"
+                  src="assets/kidus.webp"/>
+              </div>
+
+              <div class="inside">
+
+                <div class="role">
+                  Undergraduate Researcher
+                </div>
+
+                <h3>Kidus A. Beshah</h3>
+
+                <p>
+                  Undergraduate researcher at SAMS Laboratory.
+                </p>
+
+                <div class="social-links"
+                     aria-label="Kidus A. Beshah profile links">
+
+                  <!-- GOOGLE SCHOLAR -->
+                  <a
+                    class="social-icon unavailable"
+                    aria-disabled="true"
+                    tabindex="-1"
+                    aria-label="Google Scholar — Kidus A. Beshah"
+                    title="Google Scholar link not yet provided">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm-6 12v4c2 2.5 10 2.5 12 0v-4l-6 4-6-4Z"
+                        fill="currentColor"/>
+                    </svg>
+                  </a>
+
+                  <!-- LINKEDIN -->
+                  <a
+                    class="social-icon unavailable"
+                    aria-disabled="true"
+                    tabindex="-1"
+                    aria-label="LinkedIn — Kidus A. Beshah"
+                    title="LinkedIn link not yet provided">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5c0-2.5-3-2.3-3 0v5h-3V9h3v1.4c1.4-2.4 6-2.6 6 2.3V19Z"
+                        fill="currentColor"/>
+                    </svg>
+                  </a>
+
+                  <!-- EMAIL -->
+                  <a
+                    class="social-icon unavailable"
+                    aria-disabled="true"
+                    tabindex="-1"
+                    aria-label="Email — Kidus A. Beshah"
+                    title="Email link not yet provided">
+
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path
+                        d="M3 5h18v14H3zM3 6l9 7 9-7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linejoin="round"
+                        stroke-width="1.8"/>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>
+      <b>SAMS LAB</b> · Safe Autonomy for Mobility Systems
     </span>
-  </a>
 
-  <button aria-label="Toggle navigation" class="menu">☰ Menu</button>
+    <span>
+      Ingram School of Engineering · Texas State University · San Marcos, TX
+    </span>
+  </footer>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="people.html">People</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="projects.html">Projects</a>
-    <a href="news.html">News</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="capabilities.html">Capabilities</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <script src="script.js"></script>
 
-<main>
-<div class="shell">
-
-  <div class="page-top">
-    <h1 class="heading">Our Team</h1>
-  </div>
-
-  <div class="people-hierarchy">
-
-    <!-- PRINCIPAL INVESTIGATOR -->
-    <section class="people-section">
-      <h2 class="section-label">Principal Investigator</h2>
-
-      <div class="people-row">
-        <article class="card person">
-          <div class="portrait">
-            <img alt="Natnael M. Negash" src="assets/prof-negash.webp"/>
-          </div>
-
-          <div class="inside">
-            <div class="role">Principal Investigator</div>
-            <h3>Natnael M. Negash, Ph.D.</h3>
-            <p>Assistant Professor, Ingram School of Engineering, Texas State University.</p>
-
-            <div aria-label="Natnael M. Negash, Ph.D. profile links" class="social-links">
-
-              <a aria-label="Google Scholar — Natnael M. Negash, Ph.D."
-                 class="social-icon"
-                 href="https://scholar.google.com/citations?user=de8_IgUAAAAJ&amp;hl=en"
-                 rel="noopener noreferrer"
-                 target="_blank"
-                 title="Google Scholar">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm-6 12v4c2 2.5 10 2.5 12 0v-4l-6 4-6-4Z" fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a aria-disabled="true"
-                 aria-label="LinkedIn — Natnael M. Negash, Ph.D."
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="LinkedIn link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5c0-2.5-3-2.3-3 0v5h-3V9h3v1.4c1.4-2.4 6-2.6 6 2.3V19Z" fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a aria-disabled="true"
-                 aria-label="Email — Natnael M. Negash, Ph.D."
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="Email link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M3 5h18v14H3zM3 6l9 7 9-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linejoin="round"
-                        stroke-width="1.8"/>
-                </svg>
-              </a>
-
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- GRADUATE STUDENTS -->
-    <section class="people-section">
-      <h2 class="section-label">Graduate Students</h2>
-
-      <div class="people-row">
-
-        <article class="card person">
-          <div class="portrait">
-            <img alt="Bereket E. Kebede" src="assets/bereket.webp"/>
-          </div>
-
-          <div class="inside">
-            <div class="role">Doctoral Researcher</div>
-            <h3>Bereket E. Kebede</h3>
-            <p>Ph.D. student in Mechanical Engineering. Research interests: autonomous driving, machine learning, dynamic systems, and intelligent control.</p>
-
-            <div aria-label="Bereket E. Kebede profile links" class="social-links">
-
-              <a aria-disabled="true"
-                 aria-label="Google Scholar — Bereket E. Kebede"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="Google Scholar link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm-6 12v4c2 2.5 10 2.5 12 0v-4l-6 4-6-4Z" fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a aria-disabled="true"
-                 aria-label="LinkedIn — Bereket E. Kebede"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="LinkedIn link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5c0-2.5-3-2.3-3 0v5h-3V9h3v1.4c1.4-2.4 6-2.6 6 2.3V19Z" fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a aria-disabled="true"
-                 aria-label="Email — Bereket E. Kebede"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="Email link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M3 5h18v14H3zM3 6l9 7 9-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linejoin="round"
-                        stroke-width="1.8"/>
-                </svg>
-              </a>
-
-            </div>
-          </div>
-        </article>
-
-        <article class="card person">
-          <div class="portrait">
-            <img alt="Masum Billah Pial" src="assets/masum-pial.webp"/>
-          </div>
-
-          <div class="inside">
-            <div class="role">Graduate Researcher</div>
-            <h3>Masum Billah Pial</h3>
-            <p>M.Sc. student in Mechanical and Manufacturing Engineering at Texas State University.</p>
-
-            <div aria-label="Masum Billah Pial profile links" class="social-links">
-
-              <a aria-disabled="true"
-                 aria-label="Google Scholar — Masum Billah Pial"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="Google Scholar link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm-6 12v4c2 2.5 10 2.5 12 0v-4l-6 4-6-4Z" fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a aria-disabled="true"
-                 aria-label="LinkedIn — Masum Billah Pial"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="LinkedIn link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5c0-2.5-3-2.3-3 0v5h-3V9h3v1.4c1.4-2.4 6-2.6 6 2.3V19Z" fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a aria-disabled="true"
-                 aria-label="Email — Masum Billah Pial"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="Email link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M3 5h18v14H3zM3 6l9 7 9-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linejoin="round"
-                        stroke-width="1.8"/>
-                </svg>
-              </a>
-
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- UNDERGRADUATE STUDENTS -->
-    <section class="people-section">
-      <h2 class="section-label">Undergraduate Students</h2>
-
-      <div class="people-row">
-        <article class="card person">
-          <div class="portrait">
-            <img alt="Kidus A. Beshah" src="assets/kidus.webp"/>
-          </div>
-
-          <div class="inside">
-            <div class="role">Undergraduate Researcher</div>
-            <h3>Kidus A. Beshah</h3>
-            <p>Undergraduate researcher at SAMS Laboratory.</p>
-
-            <div aria-label="Kidus A. Beshah profile links" class="social-links">
-
-              <a aria-disabled="true"
-                 aria-label="Google Scholar — Kidus A. Beshah"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="Google Scholar link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm-6 12v4c2 2.5 10 2.5 12 0v-4l-6 4-6-4Z" fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a aria-disabled="true"
-                 aria-label="LinkedIn — Kidus A. Beshah"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="LinkedIn link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3v10ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5c0-2.5-3-2.3-3 0v5h-3V9h3v1.4c1.4-2.4 6-2.6 6 2.3V19Z" fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a aria-disabled="true"
-                 aria-label="Email — Kidus A. Beshah"
-                 class="social-icon unavailable"
-                 tabindex="-1"
-                 title="Email link not yet provided">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M3 5h18v14H3zM3 6l9 7 9-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linejoin="round"
-                        stroke-width="1.8"/>
-                </svg>
-              </a>
-
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-  </div>
-</div>
-</main>
-
-<footer>
-  <span>
-    <b>SAMS LAB</b> · Safe Autonomy for Mobility Systems
-  </span>
-  <span>
-    Ingram School of Engineering · Texas State University · San Marcos, TX
-  </span>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
