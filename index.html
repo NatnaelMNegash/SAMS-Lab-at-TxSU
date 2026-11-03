@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +17,7 @@
     <link href="style.css" rel="stylesheet" />
 
     <style>
+        /* Header Image - Display Full Image Without Cropping */
         .hero-banner {
             width: 100%;
             overflow: hidden;
@@ -26,14 +28,22 @@
             display: block;
             width: 100%;
             height: auto;
-            object-fit: cover;
+            max-height: none;
+            object-fit: contain;
+            object-position: center;
         }
 
-        @media (min-width: 900px) {
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .hero-banner {
+                width: 100%;
+            }
+
             .hero-banner img {
-                max-height: 440px;
-                object-fit: cover;
-                object-position: center;
+                width: 100%;
+                height: auto;
+                max-height: none;
+                object-fit: contain;
             }
         }
     </style>
@@ -41,7 +51,9 @@
 
 <body>
 
+    <!-- Navigation Header -->
     <header>
+
         <a class="brand" href="index.html">
             <img
                 alt="SAMS Lab logo"
@@ -69,11 +81,12 @@
             <a href="capabilities.html">Capabilities</a>
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
     <main>
 
-        <!-- Hero Banner -->
+        <!-- Full Width Header Image -->
         <div class="hero-banner">
             <img
                 src="assets/sams-mobility-header.webp"
@@ -85,10 +98,8 @@
 
             <section class="academic-home">
 
-                <!-- Introduction -->
+                <!-- Laboratory Introduction -->
                 <div class="academic-intro">
-
-
 
                     <h1>
                         Safe Autonomy for Mobility Systems Laboratory
@@ -106,7 +117,7 @@
 
                 </div>
 
-                <!-- Research Heading -->
+                <!-- Research Areas Heading -->
                 <div class="academic-heading">
 
                     <h2>Research Areas</h2>
@@ -120,7 +131,9 @@
                 <!-- Research Gallery -->
                 <div class="academic-gallery">
 
+                    <!-- Research Area 1 -->
                     <a href="research.html">
+
                         <img
                             alt="Interactive and socially aware autonomy"
                             src="assets/thrust1.webp"
@@ -129,9 +142,12 @@
                         <strong>
                             Interactive &amp; Socially Aware Autonomy
                         </strong>
+
                     </a>
 
+                    <!-- Research Area 2 -->
                     <a href="research.html">
+
                         <img
                             alt="Safe intelligence and control"
                             src="assets/thrust2.webp"
@@ -140,9 +156,12 @@
                         <strong>
                             Safe Intelligence &amp; Control
                         </strong>
+
                     </a>
 
+                    <!-- Research Area 3 -->
                     <a href="research.html">
+
                         <img
                             alt="Networked air and robot mobility"
                             src="assets/thrust3.webp"
@@ -151,6 +170,7 @@
                         <strong>
                             Networked Air &amp; Robot Mobility
                         </strong>
+
                     </a>
 
                 </div>
@@ -161,6 +181,7 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
         <span>
             <b>SAMS LAB</b> · Safe Autonomy for Mobility Systems
