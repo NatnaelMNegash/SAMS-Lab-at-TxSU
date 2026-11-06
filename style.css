@@ -40,3 +40,92 @@ body:has(.people-hierarchy) main{padding-top:35px;padding-bottom:45px}
 @media(max-width:1050px){nav a{font-size:14px}}
 @media(max-width:800px){header{justify-content:space-between}.menu{margin-left:auto}nav{flex:none;width:100%}nav a{font-size:16px}.people-row .person{min-height:155px}}
 @media(max-width:470px){.people-row .person{flex-direction:column}.people-row .portrait{width:100%;height:220px;flex-basis:auto}.people-row .inside{width:100%}}
+
+/* November 2026 site additions */
+.sams-section{margin:46px 0}.sams-section h2{margin:0 0 16px}.sams-media{display:block;width:100%;height:auto;border-radius:12px}.sams-media-frame{max-width:1100px;margin:20px auto}.sams-news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.sams-news-item{padding:22px;border:1px solid #dedede;border-radius:12px;background:#fff}.sams-news-item h3{margin:8px 0}.sams-news-item .sams-date{color:#b45c00;font-weight:700;font-size:.85rem}.sams-news-item p{line-height:1.6}.sams-news-item a{color:inherit}.sams-image-caption{font-size:.9rem;opacity:.8;margin-top:9px}
+
+/* ===== Nov 2026 fixes ===== */
+/* let every page scroll (old fixed-height layout clipped content, hiding the header image) */
+@media(min-width:1050px) and (min-height:700px){body{height:auto;min-height:100dvh;overflow-y:auto}}
+body{overflow-x:hidden}
+main{justify-content:flex-start}
+
+/* full-bleed images: touch left & right edges of the window */
+.hero-banner{width:100%;line-height:0;background:#fff}
+.hero-banner img{display:block;width:100%;height:auto}
+.full-bleed{width:100vw;position:relative;left:50%;margin:20px 0 26px -50vw;line-height:0}
+.full-bleed img{display:block;width:100%;height:auto;border-radius:0}
+body.home main{padding-top:clamp(20px,3vh,36px)}
+
+/* hover pop-out */
+.research-card,.gallery figure,.cards>.card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;position:relative}
+.research-card:hover,.gallery figure:hover,.cards>.card:hover{transform:translateY(-8px) scale(1.04);box-shadow:0 18px 38px rgba(32,35,41,.22);border-color:#f5cda6;z-index:5}
+.gallery figure{background:#fff}
+@media(prefers-reduced-motion:reduce){.research-card,.gallery figure,.cards>.card{transition:none}.research-card:hover,.gallery figure:hover,.cards>.card:hover{transform:none}}
+
+/* ===== Overlay heroes (home + projects) ===== */
+.hero-overlay{position:relative;width:100%;overflow:hidden;display:flex;align-items:center;min-height:clamp(360px,34vw,560px);padding:clamp(28px,5vw,70px) clamp(24px,6vw,105px);background:#111;color:#fff}
+.hero-overlay .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,10,16,.74) 0%,rgba(8,10,16,.58) 55%,rgba(8,10,16,.48) 100%)}
+.hero-overlay .hero-content{position:relative;z-index:2;width:100%;max-width:1300px;margin:0 auto}
+.hero-overlay h1,.hero-overlay h3{color:#fff}
+.hero-overlay .academic-intro{margin:0 auto}
+.hero-overlay .academic-intro>p:not(.eyebrow),.hero-overlay .lead{color:#e8eaee}
+.hero-overlay .academic-link{color:#ffb15c}
+.hero-overlay .page-top{margin-bottom:28px}
+.hero-overlay .heading{color:#fff}
+.hero-overlay .card{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.28);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.hero-overlay .card p{color:#e8eaee}
+.hero-overlay .card .num{color:#ffb15c}
+.hero-overlay .cards>.card:hover{background:rgba(255,255,255,.2);border-color:#ffb15c}
+main.overlay-page{padding:0;justify-content:flex-start}
+main.overlay-page .hero-overlay{flex:1}
+
+/* contact: plain email text */
+.email-link{color:var(--orange);font-weight:700;font-size:1.05rem;word-break:break-all}
+.email-link:hover{text-decoration:underline}
+
+/* News items pop out on hover (home + news pages) */
+.sams-news-item{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;position:relative}
+.sams-news-item:hover{transform:translateY(-8px) scale(1.04);box-shadow:0 18px 38px rgba(32,35,41,.22);border-color:#f5cda6;z-index:5}
+@media(prefers-reduced-motion:reduce){.sams-news-item{transition:none}.sams-news-item:hover{transform:none}}
+
+/* Latest News overlaid in home hero */
+.hero-overlay .hero-news{margin:clamp(18px,3vh,32px) 0 0}
+.hero-overlay .hero-news h2{color:#fff;font-size:clamp(18px,1.8vw,24px);margin:0 0 12px}
+.hero-overlay .hero-news .sams-news-grid{gap:16px}
+.hero-overlay .hero-news .sams-news-item{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.28);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:16px 18px}
+.hero-overlay .hero-news .sams-news-item h3{font-size:15px;margin:6px 0;color:#fff}
+.hero-overlay .hero-news .sams-news-item p{font-size:13px;line-height:1.5;color:#e8eaee;margin:0}
+.hero-overlay .hero-news .sams-news-item .sams-date{color:#ffb15c}
+.hero-overlay .hero-news .sams-news-item:hover{background:rgba(255,255,255,.2);border-color:#ffb15c}
+.hero-overlay .hero-news-link{margin:14px 0 0}
+/* keep home title clear of the logo in the header image */
+body.home .hero-overlay{padding-top:clamp(70px,9vw,135px);padding-bottom:clamp(28px,4vw,56px)}
+
+/* ===== Research Areas slideshow with side peeks ===== */
+.ra-carousel{--w:58%;--gap:24px;position:relative;max-width:1300px;margin:0 auto}
+.ra-stage{position:relative;width:100%;padding-top:calc(var(--w) * 9 / 16 + 66px);overflow:hidden}
+.ra-slide{position:absolute;top:0;left:calc((100% - var(--w)) / 2);width:var(--w);display:block;text-align:center;transform:translateX(calc(var(--o,0) * (100% + var(--gap)))) scale(var(--sc,1));opacity:var(--op,1);transition:transform .4s ease,opacity .4s ease;transform-origin:center top;z-index:1}
+.ra-slide.is-active{--sc:1;--op:1;z-index:2}
+.ra-slide:not(.is-active){--sc:.86;--op:.5}
+.ra-slide img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#fff;border-radius:10px;box-shadow:0 6px 22px rgba(0,0,0,.12)}
+.ra-slide strong{display:block;font-size:clamp(15px,1.5vw,20px);font-weight:700;margin:14px 0 4px;line-height:1.4}
+.ra-slide.no-anim{transition:none}
+.ra-arrow{position:absolute;top:calc(var(--w) * 9 / 32);transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--orange);font-size:18px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:background .2s,color .2s,transform .2s;z-index:5;display:flex;align-items:center;justify-content:center;padding:0}
+.ra-arrow:hover{background:var(--orange);color:#fff;transform:translateY(-50%) scale(1.08)}
+.ra-prev{left:10px}.ra-next{right:10px}
+.ra-dots{display:flex;justify-content:center;gap:9px;margin-top:6px}
+.ra-dots button{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:#d6d8dc;cursor:pointer}
+.ra-dots button.active{background:var(--orange)}
+@media(max-width:700px){.ra-carousel{--w:76%;--gap:14px}.ra-arrow{width:36px;height:36px;font-size:15px}.ra-prev{left:4px}.ra-next{right:4px}}
+@media(prefers-reduced-motion:reduce){.ra-slide{transition:none}}
+
+/* ===== Rotating news cards (home hero) ===== */
+.hero-overlay .hero-news .news-viewport{overflow:hidden;padding:14px 12px 18px;margin:-14px -12px -18px}
+.news-track{display:flex;gap:16px;transition:transform .6s ease;will-change:transform}
+.news-track.no-anim{transition:none}
+.news-track .sams-news-item{flex:0 0 calc((100% - 32px) / 3);min-width:0}
+@media(max-width:900px){.news-track .sams-news-item{flex-basis:calc((100% - 16px) / 2)}}
+@media(max-width:600px){.news-track .sams-news-item{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.news-track{transition:none}}

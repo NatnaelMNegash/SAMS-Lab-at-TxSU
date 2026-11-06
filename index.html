@@ -15,41 +15,9 @@
     />
 
     <link href="style.css" rel="stylesheet" />
-
-    <style>
-        /* Header Image - Display Full Image Without Cropping */
-        .hero-banner {
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-
-        .hero-banner img {
-            display: block;
-            width: 100%;
-            height: auto;
-            max-height: none;
-            object-fit: contain;
-            object-position: center;
-        }
-
-        /* Responsive Layout */
-        @media (max-width: 768px) {
-            .hero-banner {
-                width: 100%;
-            }
-
-            .hero-banner img {
-                width: 100%;
-                height: auto;
-                max-height: none;
-                object-fit: contain;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body class="home">
 
     <!-- Navigation Header -->
     <header>
@@ -84,22 +52,10 @@
 
     </header>
 
-    <main>
-
-        <!-- Full Width Header Image -->
-        <div class="hero-banner">
-            <img
-                src="assets/sams-mobility-header.webp"
-                alt="Connected autonomous mobility systems, aerial vehicles and smart city transportation"
-            />
-        </div>
-
-        <div class="shell">
-
-            <section class="academic-home">
-
-                <!-- Laboratory Introduction -->
-                <div class="academic-intro">
+    <!-- Full-width hero: image with darkened overlay and text on top -->
+    <section class="hero-overlay">
+        <img class="hero-bg" src="assets/amber-header.webp" alt="" />
+        <div class="hero-content academic-intro">
 
                     <h1>
                         Safe Autonomy for Mobility Systems Laboratory
@@ -114,69 +70,39 @@
                     <a class="academic-link" href="research.html">
                         Learn about our research →
                     </a>
+        
+<section class="sams-section hero-news" aria-labelledby="news-heading"><h2 id="news-heading">Latest News</h2><div class="news-viewport"><div class="news-track"><article class="sams-news-item"><div class="sams-date">Fall 2026</div><h3>Bereket Kebede joins SAMS Laboratory</h3><p>We welcome Bereket Kebede to the SAMS Laboratory at Texas State University as a Ph.D. student in Mechanical Engineering.</p></article><article class="sams-news-item"><div class="sams-date">Fall 2026</div><h3>Masum Billah Pial joins SAMS Laboratory</h3><p>We welcome Masum Billah Pial to the SAMS Laboratory at Texas State University as a graduate student.</p></article><article class="sams-news-item"><div class="sams-date">Fall 2026</div><h3>Kidus A. Beshah joins SAMS Laboratory</h3><p>We welcome Kidus A. Beshah to the SAMS Laboratory at Texas State University as a undergraduate student.</p></article></div></div><p class="hero-news-link"><a class="academic-link" href="news.html">All lab news →</a></p></section>
+        </div>
+    </section>
 
-                </div>
+    <main>
+
+        <div class="shell">
+
+            <section class="academic-home">
 
                 <!-- Research Areas Heading -->
                 <div class="academic-heading">
 
                     <h2>Research Areas</h2>
 
-                    <a href="gallery.html">
-                        Explore the gallery →
-                    </a>
+                    <a href="research.html">Explore Research →</a>
 
                 </div>
 
-                <!-- Research Gallery -->
-                <div class="academic-gallery">
-
-                    <!-- Research Area 1 -->
-                    <a href="research.html">
-
-                        <img
-                            alt="Interactive and socially aware autonomy"
-                            src="assets/thrust1.webp"
-                        />
-
-                        <strong>
-                            Interactive &amp; Socially Aware Autonomy
-                        </strong>
-
-                    </a>
-
-                    <!-- Research Area 2 -->
-                    <a href="research.html">
-
-                        <img
-                            alt="Safe intelligence and control"
-                            src="assets/thrust2.webp"
-                        />
-
-                        <strong>
-                            Safe Intelligence &amp; Control
-                        </strong>
-
-                    </a>
-
-                    <!-- Research Area 3 -->
-                    <a href="research.html">
-
-                        <img
-                            alt="Networked air and robot mobility"
-                            src="assets/thrust3.webp"
-                        />
-
-                        <strong>
-                            Networked Air &amp; Robot Mobility
-                        </strong>
-
-                    </a>
-
-                </div>
-
-            </section>
-
+                <!-- Research Areas slideshow -->
+<div class="ra-carousel" aria-roledescription="carousel" aria-label="Research areas">
+<button class="ra-arrow ra-prev" type="button" aria-label="Previous research area">&#10094;</button>
+<div class="ra-stage">
+<a class="ra-slide" href="research.html"><img alt="Interactive and socially aware autonomy" src="assets/thrust1.webp" /> <strong> Interactive &amp; Socially Aware Autonomy </strong></a>
+<a class="ra-slide" href="research.html"><img alt="Safe intelligence and control" src="assets/thrust2.webp" /> <strong> Safe Intelligence &amp; Control </strong></a>
+<a class="ra-slide" href="research.html"><img alt="Networked air and robot mobility" src="assets/thrust3.webp" /> <strong> Networked Air &amp; Robot Mobility </strong></a>
+</div>
+<button class="ra-arrow ra-next" type="button" aria-label="Next research area">&#10095;</button>
+<div class="ra-dots" role="tablist"></div>
+</div>
+</section>
+<section class="sams-section" aria-labelledby="simulation-heading"><h2 id="simulation-heading">Autonomous Vehicle Simulation</h2><div class="sams-media-frame"><img class="sams-media" src="assets/traffic-simulation.gif" alt="Longitudinal road simulation showing the positions of multiple vehicles" loading="lazy"></div></section>
         </div>
 
     </main>
@@ -186,7 +112,7 @@
         <span>
             <b>SAMS LAB</b> · Safe Autonomy for Mobility Systems
         </span>
-    </footer>
+    <span>© 2026 SAMS Laboratory · Texas State University. All rights reserved.</span></footer>
 
     <script src="script.js"></script>
 
