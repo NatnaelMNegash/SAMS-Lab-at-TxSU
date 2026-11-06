@@ -1,1 +1,4 @@
-SAMS LAB WEBSITE — MULTI-PAGE EDITION
+SAMS LAB WEBSITE
+<br>
+
+Written by github @bereketeshete
