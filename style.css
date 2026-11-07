@@ -129,3 +129,75 @@ body.home .hero-overlay{padding-top:clamp(70px,9vw,135px);padding-bottom:clamp(2
 @media(max-width:900px){.news-track .sams-news-item{flex-basis:calc((100% - 16px) / 2)}}
 @media(max-width:600px){.news-track .sams-news-item{flex-basis:100%}}
 @media(prefers-reduced-motion:reduce){.news-track{transition:none}}
+
+/* November 2026 · Home page identity, Ingram Hall feature, and school-style footer */
+body.home header{min-height:104px;height:auto;padding:13px clamp(22px,4.5vw,80px);gap:24px}
+body.home .brand{gap:17px;min-width:265px}
+body.home .brand img{width:136px;height:78px;filter:drop-shadow(0 4px 9px rgba(51,25,20,.15))}
+body.home .brand-text{font-size:12px;line-height:1.55;letter-spacing:.1em}
+body.home .brand-text strong{font-size:17px;letter-spacing:.01em;color:#501214}
+body.home header nav{gap:clamp(10px,1.35vw,23px)}
+body.home header nav a{font-size:16px;font-weight:700;color:#3e4148;padding:10px 0}
+body.home header nav a:hover,body.home header nav a.active{color:#8b1d24;border-color:#8b1d24}
+body.home .menu{font-size:15px;font-weight:700}
+body.home .hero-overlay{min-height:clamp(430px,39vw,610px)}
+body.home .hero-overlay .academic-intro h1{font-size:clamp(38px,4.15vw,64px);max-width:950px}
+body.home .hero-overlay .academic-intro>p:not(.eyebrow){font-size:clamp(17px,1.55vw,21px);max-width:850px}
+body.home .hero-news h2{font-size:clamp(23px,2.1vw,29px)}
+body.home .hero-overlay .hero-news .sams-news-item{padding:19px 21px}
+body.home .hero-overlay .hero-news .sams-news-item h3{font-size:clamp(16px,1.4vw,19px);line-height:1.35}
+body.home .hero-overlay .hero-news .sams-news-item p{font-size:clamp(14px,1.15vw,16px);line-height:1.55}
+body.home .hero-overlay .hero-news .sams-news-item .sams-date{font-size:13px;line-height:1.4}
+body.home .hero-overlay .hero-news .news-live{border-color:rgba(255,194,92,.78);background:linear-gradient(145deg,rgba(103,34,28,.86),rgba(255,255,255,.12))}
+body.home .hero-overlay .hero-news .news-live .sams-date{color:#ffd07a}
+
+body.home main{padding-top:clamp(28px,4vw,58px);padding-bottom:clamp(36px,5vw,70px)}
+body.home .shell{max-width:1450px}
+.campus-feature{position:relative;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);align-items:center;max-width:1390px;margin:0 auto clamp(55px,7vw,96px);border-radius:24px;background:#f7f5f1;overflow:hidden;box-shadow:0 20px 60px rgba(34,27,25,.12)}
+.campus-photo-wrap{position:relative;align-self:stretch;min-height:420px;overflow:hidden;background:#2a2525}
+.campus-photo-wrap::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(0deg,rgba(25,16,15,.66),transparent 92%);pointer-events:none}
+.campus-photo{display:block;width:100%;height:100%;min-height:420px;object-fit:cover;object-position:center 54%;transition:transform .65s ease}
+.campus-feature:hover .campus-photo{transform:scale(1.035)}
+.campus-photo-label{position:absolute;z-index:1;left:clamp(20px,3vw,42px);bottom:26px;color:white;font-size:clamp(13px,1.1vw,16px);font-weight:700;letter-spacing:.03em;text-shadow:0 2px 8px #0008}
+.campus-copy{position:relative;padding:clamp(30px,4.5vw,68px);}
+.campus-copy::before{content:"";position:absolute;width:170px;height:170px;right:-70px;top:-74px;border:1px solid rgba(139,29,36,.2);border-radius:50%;box-shadow:0 0 0 19px rgba(139,29,36,.035),0 0 0 40px rgba(139,29,36,.025)}
+.campus-copy .eyebrow{position:relative;z-index:1;color:#8b1d24;font-size:12px;letter-spacing:.16em}
+.campus-copy h2{position:relative;z-index:1;font-family:Manrope,Arial,sans-serif;color:#341b1b;font-size:clamp(29px,3vw,44px);line-height:1.15;letter-spacing:-.045em;margin:0 0 18px}
+.campus-copy>p:not(.eyebrow){position:relative;z-index:1;color:#555a62;font-size:clamp(16px,1.3vw,18px);line-height:1.75;margin:0 0 25px}
+.campus-cta{position:relative;z-index:1;display:inline-flex;align-items:center;gap:12px;padding:13px 18px;border-radius:6px;color:white;background:#501214;font-size:15px;font-weight:700;box-shadow:0 7px 18px rgba(80,18,20,.2);transition:transform .2s,background .2s}
+.campus-cta:hover{transform:translateY(-2px);background:#711e24}
+body.home .academic-heading{margin-bottom:22px;padding-bottom:16px}
+body.home .academic-heading h2{font-size:clamp(25px,2.5vw,34px)}
+body.home .academic-heading>a{font-size:15px}
+body.home .ra-slide strong{font-size:clamp(16px,1.55vw,21px)}
+
+body.home .site-footer{display:block;flex-shrink:0;background:#f2f0ed;color:#fff;padding:0;border:0}
+.footer-main{display:grid;grid-template-columns:1.12fr 1fr 1fr;gap:clamp(28px,5vw,78px);padding:clamp(38px,5vw,70px) clamp(24px,7vw,112px);background:#4d4d4f}
+.footer-identity{padding-right:clamp(15px,3vw,42px);border-right:1px solid rgba(255,255,255,.18)}
+.footer-sams-logo{display:inline-flex;align-items:center;justify-content:center;min-height:70px;max-width:250px;padding:8px 13px;border-radius:10px;background:rgba(255,255,255,.96)}
+.footer-sams-logo img{display:block;width:220px;height:75px;object-fit:contain}
+.footer-tagline{margin:14px 0 26px;color:#e6e2df;font-size:16px;line-height:1.5}
+.txst-wordmark{display:inline-flex;align-items:center;gap:10px;color:#e2c675}
+.txst-wordmark svg{width:42px;height:42px;flex:none}
+.txst-wordmark span{font-family:Georgia,serif;font-size:18px;line-height:1.05;font-weight:700;letter-spacing:.12em;color:#fff}
+.txst-wordmark b{font-size:13px;letter-spacing:.24em}
+.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.footer-column h2{margin:2px 0 12px;color:#fff;font-size:clamp(19px,1.8vw,24px);line-height:1.25}
+.footer-column a,.footer-column p{margin:0;color:#f2f0ed;font-size:16px;line-height:1.55}
+.footer-column a{transition:color .2s}
+.footer-column a:hover{color:#e2c675;text-decoration:underline;text-underline-offset:3px}
+.footer-column p{margin-bottom:2px;color:#e5e1de}
+.footer-column .footer-contact{display:inline-flex;align-items:center;gap:10px;margin-top:10px;padding:12px 17px;border:1px solid #e2c675;border-radius:5px;color:#fff;font-weight:700;text-decoration:none}
+.footer-column .footer-contact:hover{background:#e2c675;color:#341b1b}
+.footer-bottom{display:flex;justify-content:space-between;gap:18px;padding:18px clamp(24px,7vw,112px);background:#501214;color:#fff;font-size:14px;line-height:1.5}
+.footer-bottom a{color:#f2dfb0}
+.footer-bottom a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:1050px){body.home header{flex-wrap:wrap;min-height:100px;justify-content:space-between}body.home .brand{min-width:240px}body.home header nav{flex:1;justify-content:flex-end}body.home header nav a{font-size:15px}.campus-feature{grid-template-columns:1fr 1fr}.campus-photo-wrap,.campus-photo{min-height:380px}.footer-main{gap:28px;padding-left:5vw;padding-right:5vw}}
+@media(max-width:800px){body.home header{min-height:82px;padding:10px 20px}body.home .brand{min-width:0;gap:10px}body.home .brand img{width:112px;height:64px}body.home .brand-text{font-size:10px}body.home .brand-text strong{font-size:15px}body.home .menu{display:block}body.home header nav{display:none;position:absolute;top:82px;left:0;right:0;width:100%;z-index:20;padding:18px 24px;background:#fff;box-shadow:0 12px 24px rgba(0,0,0,.13);justify-content:flex-start}body.home header nav.open{display:flex}body.home header nav a{font-size:17px}.campus-feature{grid-template-columns:1fr}.campus-photo-wrap,.campus-photo{min-height:clamp(260px,60vw,430px)}.campus-copy{padding:34px 28px 38px}.footer-main{grid-template-columns:1fr 1fr}.footer-identity{grid-column:1/-1;border-right:0;border-bottom:1px solid rgba(255,255,255,.18);padding:0 0 24px}.footer-bottom{flex-direction:column}}
+@media(max-width:560px){body.home .hero-overlay{min-height:0;padding-top:65px;padding-bottom:34px}body.home .hero-overlay .academic-intro h1{font-size:36px}body.home .hero-overlay .hero-news .sams-news-item{padding:17px}.campus-feature{margin-bottom:48px;border-radius:16px}.campus-photo-wrap,.campus-photo{min-height:250px}.campus-copy h2{font-size:30px}.footer-main{grid-template-columns:1fr;padding:34px 25px;gap:34px}.footer-identity{grid-column:auto}.footer-column h2{font-size:21px}.footer-column a,.footer-column p{font-size:16px}.footer-bottom{font-size:13px;padding:16px 25px}}
+@media(prefers-reduced-motion:reduce){.campus-photo,.campus-cta{transition:none}.campus-feature:hover .campus-photo,.campus-cta:hover{transform:none}}
+.footer-txst-logo{display:inline-flex;align-items:center;flex:none}
+.footer-txst-logo img{display:block;width:clamp(230px,26vw,340px);height:auto;max-height:42px;object-fit:contain;object-position:left center}
+.footer-bottom{align-items:center}
+@media(max-width:800px){.footer-bottom{align-items:flex-start}.footer-txst-logo img{width:min(300px,75vw)}}
+
