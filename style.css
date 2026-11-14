@@ -494,3 +494,24 @@ body.contact-page{height:auto;min-height:100dvh;overflow-x:hidden;overflow-y:aut
 .contact-location-card .location-detail strong,.contact-location-card .location-detail a{line-height:1.35!important}
 @media(max-width:850px){.contact-hero{padding:8px 0!important}.contact-hero-art{aspect-ratio:1.8/1!important}.contact-connect{padding:8px 0!important}.contact-visit{padding-top:8px!important}}
 @media(max-width:560px){.contact-hero{padding:6px 0!important}.contact-hero-art{aspect-ratio:1.65/1!important}.contact-connect{padding:6px 0!important}.contact-section-heading{margin-bottom:8px!important}.contact-visit{padding-top:6px!important}.contact-location-card{gap:1px!important;padding:10px 12px!important}.contact-location-card .location-detail{gap:7px!important;padding:1px 0!important}}
+
+
+/* Global mobility network art replaces the decorative monogram in the contact hero. */
+.contact-hero-art{display:block!important;min-height:0!important;aspect-ratio:auto!important;overflow:visible!important;padding:0!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important}
+.contact-hero-art:before,.contact-hero-art:after{display:none!important}
+.contact-hero-illustration{display:block;width:100%;height:auto;aspect-ratio:1.5/1;object-fit:contain;border-radius:14px}
+
+
+/* Distinct SAMS opportunity cards with high-contrast white content. */
+.contact-opportunity-grid .contact-opportunity:nth-child(1){background:#236b48!important;border-color:#236b48!important;color:#fff!important}
+.contact-opportunity-grid .contact-opportunity:nth-child(2){background:#173f68!important;border-color:#173f68!important;color:#fff!important}
+.contact-opportunity-grid .contact-opportunity:nth-child(3){background:#ad4b12!important;border-color:#ad4b12!important;color:#fff!important}
+.contact-opportunity-grid .contact-opportunity h3,
+.contact-opportunity-grid .contact-opportunity p,
+.contact-opportunity-grid .contact-opportunity>a,
+.contact-opportunity-grid .contact-opportunity>a span{color:#fff!important}
+.contact-opportunity-grid .contact-opportunity-icon{background:rgba(255,255,255,.16)!important;color:#fff!important;border:1px solid rgba(255,255,255,.28)}
+.contact-opportunity-grid .contact-opportunity:hover{box-shadow:0 14px 34px rgba(20,25,30,.2)}
+.contact-opportunity-grid .contact-opportunity:nth-child(1):hover{border-color:#236b48!important}
+.contact-opportunity-grid .contact-opportunity:nth-child(2):hover{border-color:#173f68!important}
+.contact-opportunity-grid .contact-opportunity:nth-child(3):hover{border-color:#ad4b12!important}
