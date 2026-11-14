@@ -19,6 +19,22 @@
 .contact-art-mark:after{content:"";position:absolute;bottom:24px;left:50%;width:32px;height:2px;border-radius:2px;background:#d7bd76;transform:translateX(-50%)}
 .contact-art-label{padding:8px 12px;border:1px solid rgba(80,18,20,.08);background:rgba(255,255,255,.94);color:#501214;font-size:10px;box-shadow:0 5px 16px rgba(36,24,23,.08)}
 @media(max-width:560px){.contact-location-card{gap:10px;padding:17px}.contact-hero-art{min-height:245px}.contact-art-mark{width:116px;height:116px;font-size:76px}.contact-art-mark:before{inset:9px;border-radius:22px}.contact-art-mark:after{bottom:19px;width:27px}}
+/* Compact contact sections and the three office details while preserving text sizes. */
+.contact-hero{min-height:0!important;padding:8px 0!important}
+.contact-hero-art{min-height:0!important;aspect-ratio:1.8/1!important}
+.contact-connect{padding:8px 0!important}
+.contact-section-heading{margin-bottom:10px!important}
+.contact-visit{padding-top:8px!important}
+.contact-location-card{gap:2px!important;padding:12px 16px!important}
+.contact-location-card .location-detail{gap:8px!important;padding:2px 0!important}
+.contact-location-card .location-detail>div{gap:1px!important}
+.contact-location-card .location-detail strong,.contact-location-card .location-detail a{line-height:1.35!important}
+@media(max-width:850px){.contact-hero{padding:8px 0!important}.contact-hero-art{aspect-ratio:1.8/1!important}.contact-connect{padding:8px 0!important}.contact-visit{padding-top:8px!important}}
+@media(max-width:560px){.contact-hero{padding:6px 0!important}.contact-hero-art{aspect-ratio:1.65/1!important}.contact-connect{padding:6px 0!important}.contact-section-heading{margin-bottom:8px!important}.contact-visit{padding-top:6px!important}.contact-location-card{gap:1px!important;padding:10px 12px!important}.contact-location-card .location-detail{gap:7px!important;padding:1px 0!important}}
+/* Global mobility network art replaces the decorative monogram in the contact hero. */
+.contact-hero-art{display:block!important;min-height:0!important;aspect-ratio:auto!important;overflow:visible!important;padding:0!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important}
+.contact-hero-art:before,.contact-hero-art:after{display:none!important}
+.contact-hero-illustration{display:block;width:100%;height:auto;aspect-ratio:1.5/1;object-fit:contain;border-radius:14px}
 </style>
 </head><body class="site-page contact-page"><header class="site-header">
   <a class="brand" href="index.html" aria-label="SAMS Laboratory home">
@@ -45,7 +61,7 @@
       <p class="lead">Connect with the SAMS Laboratory to discuss research, student opportunities, collaborations, or a visit to Ingram Hall.</p>
       <div class="contact-actions"><a class="btn" href="mailto:natnegash@txstate.edu">Email Dr. Negash <span aria-hidden="true">→</span></a><a class="btn alt" href="#visit-sams">Plan your visit <span aria-hidden="true">↓</span></a></div>
     </div>
-    <div class="contact-hero-art" aria-hidden="true"><div class="contact-orbit orbit-one"></div><div class="contact-orbit orbit-two"></div><div class="contact-art-mark">S</div><span class="contact-art-label label-autonomy">SAFE AUTONOMY</span><span class="contact-art-label label-mobility">HUMAN-CENTERED MOBILITY</span></div>
+    <div class="contact-hero-art"><img class="contact-hero-illustration" src="assets/global-mobility-network.png" alt="Global mobility network connecting autonomous vehicles, aerial robots, and road systems" loading="lazy" /></div>
   </section>
 
   <section class="contact-connect" aria-labelledby="connect-heading">
