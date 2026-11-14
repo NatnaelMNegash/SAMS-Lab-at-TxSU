@@ -496,6 +496,9 @@ body.contact-page{height:auto;min-height:100dvh;overflow-x:hidden;overflow-y:aut
 @media(max-width:560px){.contact-hero{padding:6px 0!important}.contact-hero-art{aspect-ratio:1.65/1!important}.contact-connect{padding:6px 0!important}.contact-section-heading{margin-bottom:8px!important}.contact-visit{padding-top:6px!important}.contact-location-card{gap:1px!important;padding:10px 12px!important}.contact-location-card .location-detail{gap:7px!important;padding:1px 0!important}}
 
 
+
+
+
 /* Distinct SAMS opportunity cards with high-contrast white content. */
 .contact-opportunity-grid .contact-opportunity:nth-child(1){background:#236b48!important;border-color:#236b48!important;color:#fff!important}
 .contact-opportunity-grid .contact-opportunity:nth-child(2){background:#173f68!important;border-color:#173f68!important;color:#fff!important}
@@ -515,3 +518,8 @@ body.contact-page{height:auto;min-height:100dvh;overflow-x:hidden;overflow-y:aut
 .contact-hero-art{display:block!important;min-height:0!important;aspect-ratio:1.5/1!important;overflow:hidden!important;padding:0!important;border:0!important;border-radius:14px!important;background:transparent!important;box-shadow:none!important}
 .contact-hero-art:before,.contact-hero-art:after{display:none!important}
 .contact-hero-illustration{display:block;width:100%;height:100%;object-fit:cover;border-radius:14px}
+
+/* Keep the homepage navigation at the same size as the other site pages. */
+body.home .site-header nav a{font-size:19.2px}
+@media(max-width:1320px){body.home .site-header nav a{font-size:16px}}
+@media(max-width:1080px){body.home .site-header nav a{font-size:17px}}
