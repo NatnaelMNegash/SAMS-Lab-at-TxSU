@@ -12,7 +12,7 @@
 .people-row .inside p{line-height:1.5}
 .person-link{color:var(--orange);font-weight:700}
 .people-row .inside p+p{margin-top:8px}
-@media(min-width:1050px) and (min-height:700px){.people-hierarchy{gap:clamp(10px,2vh,20px)}.people-row .person{min-height:clamp(115px,17vh,165px)}}
+@media(min-width:1050px) and (min-height:700px){.people-hierarchy{gap:clamp(10px,2vh,16px)}.people-row .person{min-height:clamp(115px,17vh,165px)}}
 @media(max-width:700px){.people-row{grid-template-columns:1fr}.people-row .portrait{width:120px;flex-basis:120px}}
 
 /* Home page gallery preview */
