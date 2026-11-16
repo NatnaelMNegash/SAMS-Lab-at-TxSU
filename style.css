@@ -523,3 +523,30 @@ body.contact-page{height:auto;min-height:100dvh;overflow-x:hidden;overflow-y:aut
 body.home .site-header nav a{font-size:19.2px}
 @media(max-width:1320px){body.home .site-header nav a{font-size:16px}}
 @media(max-width:1080px){body.home .site-header nav a{font-size:17px}}
+
+
+/* Day/night toggle additions */
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 10px;border:1px solid var(--orange);border-radius:999px;background:transparent;color:var(--maroon);font-size:13px;font-weight:700;line-height:1.2;cursor:pointer;white-space:nowrap}
+.theme-toggle:hover{background:#f3eee2}
+.theme-toggle:focus-visible{outline:3px solid #d7bd76;outline-offset:3px}
+html[data-theme="night"]{color-scheme:dark;--ink:#f1eeea;--muted:#c5bebd;--line:#4b4243;--paper:#211e1f;--soft:#2b2728;--orange:#e3c66f;--gold:#e3c66f}
+html[data-theme="night"],html[data-theme="night"] body{background:#191718;color:var(--ink)}
+html[data-theme="night"] header,html[data-theme="night"] .site-header{background:#211e1f;border-color:#494142}
+html[data-theme="night"] .brand-text,html[data-theme="night"] nav a{color:#e8e2dd}
+html[data-theme="night"] nav a:hover,html[data-theme="night"] nav a.active{color:#e3c66f;border-color:#e3c66f}
+html[data-theme="night"] .theme-toggle{color:#f3dda0;border-color:#b99a51}
+html[data-theme="night"] .theme-toggle:hover{background:#393131}
+html[data-theme="night"] .menu{background:#2b2728;color:#f1eeea;border-color:#514849}
+html[data-theme="night"] main{background:transparent}
+html[data-theme="night"] .heading,html[data-theme="night"] h1,html[data-theme="night"] h2,html[data-theme="night"] h3{color:var(--ink)}
+html[data-theme="night"] p,html[data-theme="night"] .lead,html[data-theme="night"] .card p,html[data-theme="night"] .feature p,html[data-theme="night"] .contact-box p,html[data-theme="night"] .mini,html[data-theme="night"] .pub small{color:var(--muted)}
+html[data-theme="night"] .card,html[data-theme="night"] .person,html[data-theme="night"] .sams-news-item,html[data-theme="night"] .pub,html[data-theme="night"] .feature,html[data-theme="night"] .contact-box,html[data-theme="night"] .contact-opportunity,html[data-theme="night"] .contact-location-card,html[data-theme="night"] .contact-map-wrap,html[data-theme="night"] .event-album,html[data-theme="night"] .capability-equipment-card,html[data-theme="night"] .capability-resource,html[data-theme="night"] .capability-activity,html[data-theme="night"] .gallery figure,html[data-theme="night"] .home-gallery-grid a{background:#252122;border-color:#494142;color:var(--ink)}
+html[data-theme="night"] .event-album{background:linear-gradient(145deg,#252122,#302b2c)}
+html[data-theme="night"] .sams-news-item .sams-date,html[data-theme="night"] .section-label,html[data-theme="night"] .role,html[data-theme="night"] .year{color:#e3c66f}
+html[data-theme="night"] .contact-art-label{background:#292526;color:#f1eeea}
+html[data-theme="night"] footer:not(.site-footer){background:#211e1f;border-color:#494142;color:#c5bebd}
+html[data-theme="night"] .site-footer,html[data-theme="night"] .site-footer .footer-main{background:#4b171d;color:#fff}
+html[data-theme="night"] .hero-overlay h1,html[data-theme="night"] .hero-overlay h2,html[data-theme="night"] .hero-overlay h3{color:#fff}
+html[data-theme="night"] .hero-overlay .lead,html[data-theme="night"] .hero-overlay .academic-intro>p:not(.eyebrow),html[data-theme="night"] .hero-overlay .sams-news-item p{color:#e8eaee}
+html[data-theme="night"] .hero-overlay .sams-news-item{background:rgba(25,23,24,.72);border-color:rgba(255,255,255,.25)}
+@media(max-width:800px){html[data-theme="night"] nav.open{background:#211e1f;border-color:#494142}}
